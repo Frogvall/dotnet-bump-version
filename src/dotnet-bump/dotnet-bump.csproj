@@ -2,19 +2,20 @@
 
   <PropertyGroup>
     <Description>A dotnet-cli command that bumps the version number of the current project. This is useful when working with multiple .NET Core projects placed in different solutions, referencing each other as NuGet packages.</Description>
-    <Authors>Balassa Marton, Andrey Zakharov</Authors>
+    <Authors>Balassa Marton, Andrey Zakharov, Facundo Glaeser</Authors>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <AssemblyName>dotnet-bump-version</AssemblyName>
+    <AssemblyName>dotnet-bump-all</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>dotnet-bump-version</PackageId>
-    <PackageProjectUrl>https://github.com/killwort/dotnet-bump</PackageProjectUrl>
+    <PackageId>dotnet-bump-all</PackageId>
+    <PackageProjectUrl>https://github.com/fglaeser/dotnet-bump-all</PackageProjectUrl>
     <PackageLicenseUrl>http://www.opensource.org/licenses/MIT</PackageLicenseUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <RootNamespace>dotnet-bump-version</RootNamespace>
-    <Version>1.2.0</Version>
+    <RootNamespace>dotnet-bump-all</RootNamespace>
+    <Version>1.4.0</Version>
     <StartupObject>DotnetBump.Program</StartupObject>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>
