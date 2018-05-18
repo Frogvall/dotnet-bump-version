@@ -7,13 +7,14 @@
     <AssemblyName>dotnet-bump-all</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>dotnet-bump-all</PackageId>
+    <PackageType>DotnetCliTool</PackageType>
     <PackageProjectUrl>https://github.com/fglaeser/dotnet-bump-all</PackageProjectUrl>
     <PackageLicenseUrl>http://www.opensource.org/licenses/MIT</PackageLicenseUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <RootNamespace>dotnet-bump-all</RootNamespace>
-    <Version>1.4.0</Version>
+    <Version>1.5.0</Version>
     <StartupObject>DotnetBump.Program</StartupObject>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
