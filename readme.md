@@ -1,5 +1,9 @@
 # dotnet-bump-all
 
+[![NuGet Version and Downloads count](https://img.shields.io/nuget/vpre/dotnet-bump-all.svg)](http://www.nuget.org/packages/dotnet-bump-all/)
+
+[![NuGet Download count](https://img.shields.io/nuget/dt/dotnet-bump-all.svg)](http://www.nuget.org/packages/dotnet-bump-all/)
+
 A dotnet-cli command that bumps the version number of the current project. This is useful when working with multiple .NET Core projects
 placed in different solutions, referencing each other as NuGet packages. Use this command before `dotnet pack` to increment a specific part of
 the version number in `project.json` before pushing your project to your local NuGet feed. This ensures that NuGet will not fetch the package from cache,
