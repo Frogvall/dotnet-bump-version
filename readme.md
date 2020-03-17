@@ -1,8 +1,8 @@
-# dotnet-bump-all
+# Frogvall.DotnetBumpVersion
 
-[![NuGet Version and Downloads count](https://img.shields.io/nuget/vpre/dotnet-bump-all.svg)](http://www.nuget.org/packages/dotnet-bump-all/)
+[![NuGet Version and Downloads count](https://img.shields.io/nuget/vpre/Frogvall.DotnetBumpVersion.svg)](http://www.nuget.org/packages/Frogvall.DotnetBumpVersion/)
 
-[![NuGet Download count](https://img.shields.io/nuget/dt/dotnet-bump-all.svg)](http://www.nuget.org/packages/dotnet-bump-all/)
+[![NuGet Download count](https://img.shields.io/nuget/dt/Frogvall.DotnetBumpVersion.svg)](http://www.nuget.org/packages/Frogvall.DotnetBumpVersion/)
 
 A dotnet-cli command that bumps the version number of the current project. This is useful when working with multiple .NET Core projects
 placed in different solutions, referencing each other as NuGet packages. Use this command before `dotnet pack` to increment a specific part of
@@ -11,17 +11,18 @@ and all your .NET Core projects in different solutions can reference the latest 
 
 ## Usage
 
-Add `dotnet bump-all` as a tool to your project by including the following into your `.csproj`:
+Add `Frogvall.DotnetBumpVersion` as a tool to your project by running the following:
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <ItemGroup>
-    <DotNetCliToolReference Include="dotnet-bump-all" Version="1.5.0" />
-  </ItemGroup>
-</Project>
-```
+> `dotnet tool install Frogvall.DotnetBumpVersion --version 3.0.1`
 
-Run `dotnet restore` to fetch bump-all binaries, after that you may use `dotnet bump-all` command to maintain version.
+Then to bump a file run:
 
-The command will increment a part of the version number of your `.csproj` according to the argument passed to it (`major`, `minor`, `patch` or `revision`).
-When this argument is ommited, the revision number is bumped. You may specify path to `.csproj` on the command line as nameless argument or rely on automatic discovery which would look for first `.csproj` file in the current directory.
+> `dotnet bump-version [major | minor | patch | revision] [-s] [-v value] [path-to-project-file]`.
+
+Arguments:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[major | minor | patch | revision]` What part of the version to bump. (Mandatory)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[path-to-project-file]` Path to the .csproj file. (Optional)
+
+Options:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-s` Use `<VersionPrefix>` instead `<Version>` tag to bump the version. (Optional)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`--value` Bump version to a fixed value, instead of incrementing by 1. (Optional)

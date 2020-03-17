@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace DotnetBump
+namespace Frogvall
 {
     class SemVer : IComparable<SemVer>, IEquatable<SemVer>
     {

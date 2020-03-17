@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>A dotnet-cli command that bumps the version number of the current project. This is useful when working with multiple .NET Core projects placed in different solutions, referencing each other as NuGet packages.</Description>
+    <Authors>Balassa Marton, Andrey Zakharov, Facundo Glaeser, Jonas Frogvall</Authors>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <PackageProjectUrl>https://github.com/Frogvall/dotnet-bump-version</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.opensource.org/licenses/MIT</PackageLicenseUrl>
+    <RootNamespace>Frogvall</RootNamespace>
+    <Version>3.0.1</Version>
+    <PackageReleaseNotes>netcore 3.1 release</PackageReleaseNotes>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>bump-version</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.1" />
+  </ItemGroup>
+</Project>

@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-bump", "src\dotnet-bump\dotnet-bump.csproj", "{DAB044EF-EDBF-4D78-BCFF-DCC4D3B942D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-bump", "src\dotnet-bump\Frogvall.DotnetBumpVersion.csproj", "{DAB044EF-EDBF-4D78-BCFF-DCC4D3B942D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
