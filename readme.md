@@ -4,10 +4,12 @@
 
 [![NuGet Download count](https://img.shields.io/nuget/dt/Frogvall.DotnetBumpVersion.svg)](http://www.nuget.org/packages/Frogvall.DotnetBumpVersion/)
 
-A dotnet-cli command that bumps the version number of the current project. This is useful when working with multiple .NET Core projects
+Originally a dotnet-cli command that bumps the version number of the current project. This is useful when working with multiple .NET Core projects
 placed in different solutions, referencing each other as NuGet packages. Use this command before `dotnet pack` to increment a specific part of
-the version number in `project.json` before pushing your project to your local NuGet feed. This ensures that NuGet will not fetch the package from cache,
+the version number in your `.csproj` before pushing your project to your local NuGet feed. This ensures that NuGet will not fetch the package from cache,
 and all your .NET Core projects in different solutions can reference the latest compiled version.
+
+Added in this fork is the possibility to set a specific part of the version to a set value, for example the id of your build pipeline.
 
 ## Usage
 
