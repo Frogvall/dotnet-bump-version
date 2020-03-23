@@ -16,7 +16,7 @@ namespace Frogvall
         Name = "dotnet bump-all",
         Description = "Bump project version",
         ExtendedHelpText = "Extended",
-        Syntax = "dotnet bump-all [major | minor | patch | revision] [-s] [-v value] [path-to-project-file]"
+        Syntax = "dotnet bump-all [major | minor | patch | revision] [-s] [--value value] [path-to-project-file]"
       };
       try
       {
@@ -106,7 +106,7 @@ namespace Frogvall
         Console.Error.WriteLine($"Saving project....");
         using (var f = File.CreateText(projectFilePath)) projectFile.Save(f);
         Console.Error.WriteLine($"Project saved.");
-        Console.WriteLine(newVersion);
+        Console.Write(newVersion);
         return 0;
       });
     }
