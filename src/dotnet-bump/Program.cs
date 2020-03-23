@@ -106,7 +106,7 @@ namespace Frogvall
         Console.Error.WriteLine($"Saving project....");
         using (var f = File.CreateText(projectFilePath)) projectFile.Save(f);
         Console.Error.WriteLine($"Project saved.");
-        Console.WriteLine($"\"{oldVersion}\" to \"{newVersion}\"");
+        Console.WriteLine(newVersion);
         return 0;
       });
     }

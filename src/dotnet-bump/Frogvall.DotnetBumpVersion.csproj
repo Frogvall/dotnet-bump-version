@@ -8,8 +8,8 @@
     <PackageProjectUrl>https://github.com/Frogvall/dotnet-bump-version</PackageProjectUrl>
     <PackageLicenseUrl>http://www.opensource.org/licenses/MIT</PackageLicenseUrl>
     <RootNamespace>Frogvall</RootNamespace>
-    <Version>3.0.1</Version>
-    <PackageReleaseNotes>netcore 3.1 release</PackageReleaseNotes>
+    <Version>3.0.2</Version>
+    <PackageReleaseNotes>Just printout newVersion as result of running the tool. This way you can pipe the resulting version number to a variable or file.</PackageReleaseNotes>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>bump-version</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
